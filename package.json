@@ -1,5 +1,5 @@
 {
-  "name": "tutorial-playwright-component-test-vue3",
+  "name": "playwright-component-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
