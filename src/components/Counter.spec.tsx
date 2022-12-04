@@ -8,7 +8,7 @@ test.use({
   },
 });
 
-test('render',async  ({mount}) => {
+test('render', async ({ mount }) => {
   const component = await mount(Counter);
   await expect(component).toContainText("Counter");
 });
@@ -29,7 +29,7 @@ test("should decrease count when click decrease button", async ({ mount }) => {
 
 
 test("min 0", async ({ mount }) => {
-  const component = await mount(<Counter initCount={6} min = {5}></Counter>);
+  const component = await mount(<Counter initCount={6} min={5}></Counter>);
   await expect(component.locator("#count")).toContainText("6")
   await component.getByText("decrease").click()
   await expect(component.locator("#count")).toContainText("5")

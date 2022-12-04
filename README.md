@@ -40,3 +40,13 @@ pnpm create playwright@latest -- --ct
 - 下载慢
 - 错误提示不足
 
+
+生成报告：
+```shell
+npx playwright show-report
+```
+自动生成测试case
+```shell
+npx playwright codegen http://localhost:5173/
+```
+![](assets/2022-12-04-22-52-13.png)
